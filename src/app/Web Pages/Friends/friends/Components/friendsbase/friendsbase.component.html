@@ -1,0 +1,47 @@
+
+<style>
+    .status-container
+    {
+        width:77%;
+        height: 35%;
+        background-color:rgb(24,25,26);
+        margin-left: 10%;
+        margin-top: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+    }
+    .post-upload-container
+    {
+        width:75%;
+        height: 20%;
+        background-color: rgb(36,37,38);
+        margin-left: 12%;
+        margin-top: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+    
+    }
+    ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    /* Optional: show position indicator in red */
+    ::-webkit-scrollbar-thumb {
+        background: #FF0000;
+    }
+</style>
+    
+
+<div class="status-container">
+    <span *ngFor="let statusData of status">
+         <app-fb-status [userName]="statusData.userName"  [status_path]="statusData.status_path"></app-fb-status>
+    </span>
+</div>
+<div class="post-upload-container">
+    <app-fb-post-upload></app-fb-post-upload>
+</div>
+
+
+<span *ngFor="let postData of postData">
+    <app-fb-post [userName]="postData.userName" [caption]="postData.caption" [imagePath]="postData.image_path" [logoPath]="postData.logo_path"></app-fb-post>
+</span>

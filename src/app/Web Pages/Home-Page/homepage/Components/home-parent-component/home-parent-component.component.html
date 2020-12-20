@@ -1,0 +1,250 @@
+<style>
+.left{
+    position: relative;
+    float:left;
+    height:48px;
+    width:29vw;
+
+    background-color: rgb(36,37,38);
+    border-bottom: 0.5px solid rgb(57,58,59);
+}
+.center{
+    float:left;
+    height:48px;
+    width: 48vw;
+    background-color: rgb(36,37,38);
+    border-bottom: 0.5px solid rgb(57,58,59);
+
+}
+
+.right{
+    position: relative;
+    float:left;
+    height:48px;
+    width: 23vw;
+    background-color: rgb(36,37,38);
+    border-bottom: 0.5px solid rgb(57,58,59);
+
+}
+
+.footer
+{
+    height: 93.4%;
+    width: 99vw;
+
+}
+.side-nav
+{
+    position: relative;
+    height:100%;
+    width:24vw;
+    margin-left: 0px;
+    background-color:  rgb(24,25,26);
+    float: left;
+}
+
+.drawer-content
+{
+    height:100%;
+    width: 52vw;
+    background-color:   rgb(24,25,26);
+    float: left;
+    overflow: scroll;
+
+}
+.ads{
+    height:100%;
+    background-color: red;
+    width:  23vw;
+    position: relative;
+    float: left;
+    background-color:  rgb(24,25,26);
+    overflow: hidden;
+}
+.tab
+{
+    background-color: rgb(36,37,38);
+    color:white;
+}
+.span{
+    color: white;
+}
+.mat-tab{
+    width:7.2vw;
+    height:46px;
+    border-radius: 8px;
+    background-color: rgb(36,37,38);
+    color:white;
+    border-bottom-width: 3px;
+    border-top-width: 0px;
+    border-left-width: 0ch;
+    border-right-width: 0px;
+    border-color:white;
+    margin-left: 13px;
+    margin-top:0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+
+.mat-tab:hover{
+    background-color: rgb(59,59,60);
+    color:rgb(45,136,255);
+    border-color:rgb(45,136,255);
+
+}
+
+.class-title
+{
+    background-color:  rgb(24,25,26);;
+    color:rgb(181,184,189);
+    text-align: left;
+    font-size: 17px;
+    margin: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+.fb-logo{
+    float: left;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: 15px;
+}
+.search-container{
+    width:80%;
+    height:92%;
+    border-radius: 5px;
+    color:rgb(181,184,189);
+    border-width: 0px;
+    font-size: 17px;
+    text-align: left;
+    background-color: rgb(36,37,38);
+    float:left;
+    position:  relative;
+    margin-top: 4px;
+    }
+    .search-box
+    {
+        width: 78%;
+
+        margin-left: 10px;
+        position: relative;
+        float: left;
+        background-color: rgb(58,59,60);
+        border-radius: 50px;
+        height: 40px;
+
+    }
+    input{
+        background-color: rgb(58,59,60);
+        border-radius: 50px;
+        vertical-align: top;
+        line-height:35px;
+        margin-left: 15px;
+        width:80%;
+        border-width: 0px;
+        font-size: 16px;
+        color:rgb(149,151,153);
+    }
+    .mat-icon
+    {
+        margin-top:8px;
+        margin-left: 10px;
+    }
+    .tab-icon
+    {
+        margin: 0px;
+    }
+    .top-right-icon
+    {
+        background-color:  rgb(58,59,60);
+        border-radius: 50%;
+        height: 38px;
+        width: 38px;
+        margin-top: 6px;
+        margin-right: 15px;
+        float:right;
+    }
+    .top-right-icon:hover{
+    background-color: rgb(59,59,60);
+    color:rgb(45,136,255);
+    border-color:rgb(45,136,255);
+
+}
+    .top-right-tab-icon
+    {
+        margin: 7px;    
+        color: rgb(228,230,235);
+    }
+    
+</style>
+
+
+<div>
+    <div class="left">
+        <img class="fb-logo"src="assets/fblogo.png" height="40px" width="40px">
+
+        <div class="search-container">
+            <div class="search-box">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>
+                <input placeholder="Search Facebook">
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        
+        <button class="mat-tab" (click)="homeTrigger()"><mat-icon class="tab-icon"aria-hidden="false" aria-label="Example home icon">home</mat-icon></button>
+        <button class="mat-tab" ><mat-icon aria-hidden="false" class="tab-icon"aria-label="Example home icon">ondemand_video</mat-icon></button>
+        <button class="mat-tab"(click)="marketplaceTrigger()"><mat-icon aria-hidden="false" class="tab-icon"aria-label="Example home icon">storefront</mat-icon></button>
+        <button class="mat-tab"><mat-icon aria-hidden="false" class="tab-icon"aria-label="Example home icon">groups</mat-icon></button>
+        <button class="mat-tab" (click)="friendsTrigger()"><mat-icon aria-hidden="false" class="tab-icon"aria-label="Example home icon">view_quilt</mat-icon></button>
+
+    </div>
+
+    <div class="right">
+        
+        <div class="top-right-icon"><mat-icon class="top-right-tab-icon"aria-hidden="false" aria-label="Example home icon">arrow_drop_down</mat-icon></div>
+        <div class="top-right-icon"><mat-icon class="top-right-tab-icon"aria-hidden="false" aria-label="Example home icon">error</mat-icon></div>
+        <div class="top-right-icon"><mat-icon class="top-right-tab-icon"aria-hidden="false" aria-label="Example home icon">chat</mat-icon></div>
+        <div class="top-right-icon"><mat-icon class="top-right-tab-icon"aria-hidden="false" aria-label="Example home icon">add</mat-icon></div>
+    </div>
+
+</div>
+
+<!--sidenav-->
+
+<div class="footer">
+    <div class="side-nav">
+        <div *ngFor="let buttonName of buttonName">
+           <div class="side-nav-button"><app-side-nav-button [button_name]="buttonName.name" [imagepath]="buttonName.imagepath"></app-side-nav-button></div>
+        </div> 
+    </div>
+    
+    <div class="drawer-content">
+        <router-outlet></router-outlet>
+    </div>
+    
+    <div class="ads">
+        <div class="class-title">Contacts</div>    
+        <div *ngFor="let chatName of chatName">
+            <div class="side-nav-button"><app-friends-name-button [chat_name]="chatName.name" [imagepath]="chatName.imagepath"></app-friends-name-button></div>
+         </div>
+    </div>
+    
+</div>
+    
+
+
+
+
+   <!-- <button (click)="chatsTrigger()">Chats </button>
+    <button (click)="logoutTrigger()">Logout </button>
+    <button (click)="friendsTrigger()">Friends </button>
+    -->

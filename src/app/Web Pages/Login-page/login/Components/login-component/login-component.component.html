@@ -1,0 +1,17 @@
+<div class="login-container">
+
+
+    <input class="input-box" [(ngModel)]="username" placeholder=" Email address or phone number"><br>
+    <input class="input-box" [(ngModel)]="password" placeholder=" password" type="password"><br>
+
+    <button class="login-button" (click)="loginTrigger()"><b>Log in</b></button><br><br>
+
+    <span class="forgot-pwd">Forgotten password?</span>
+    <div *ngIf="isErrorMessage" class="error-message">
+        <h3 >{{message}}</h3>
+    </div>
+    <hr>
+
+    <button class="signup-button"><b>Create New Account</b></button><br><br>
+    
+</div>

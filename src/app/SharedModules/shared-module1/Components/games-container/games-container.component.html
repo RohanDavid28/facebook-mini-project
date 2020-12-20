@@ -1,0 +1,55 @@
+<style>
+    .product
+    {
+        width:20%;
+        height:300px;
+        background-color: rgb(36,37,38);
+        margin-left: 1%;
+        margin-top: 20px;
+        border-radius: 8px;
+        float: left;
+        color:white;
+    
+    }
+    .follow-container
+    {
+        background-color: rgb(58,59,60);
+        color:white;
+        border-radius: 8px;
+        margin-left: 10%;
+        margin-top: 2%;
+        width: 80%;
+        height: 10%;
+        text-align: center;
+    }
+    .product-image{
+        width: 100%;
+        border-radius: 8px;
+        height:100%;
+        float: left;
+    }
+    span{
+        position: absolute;
+    
+      bottom: 20px;
+      right: 22%;
+    
+    }
+  
+    ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    /* Optional: show position indicator in red */
+    ::-webkit-scrollbar-thumb {
+        background: #FF0000;
+    }
+    </style>
+
+    <div class="product">
+        <img src="assets/{{imagePath}}" class="product-image" >
+        <div>
+            {{gameName}}
+        </div>
+        <div class="follow-container">Follow</div>
+    </div>

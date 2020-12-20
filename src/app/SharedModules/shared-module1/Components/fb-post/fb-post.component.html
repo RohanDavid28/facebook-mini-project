@@ -1,0 +1,81 @@
+
+<style>
+
+    .post
+    {
+        width:75%;
+        height: auto;
+        background-color: rgb(36,37,38);
+        margin-left: 12%;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+    .image-space
+    {
+        width:100%;
+        height:auto;
+        background-color: rgb(36,37,38);
+    }
+    .line{
+        height: 5%;
+        width: 96%;
+        margin-left: 2%;
+        margin-top: 10px;
+        border-top: 2px solid rgb(57,58,59);
+        border-bottom: 2px solid rgb(57,58,59);
+        background-color: rgb(36,37,38);
+        color:white;
+
+    }
+    span{
+        vertical-align: top;
+        line-height:40px;
+        margin-left: 10px;
+    }
+    .comment-section
+    {
+        width: 96%;
+        height: auto;
+        margin: 2%;
+        background-color: rgb(36,37,38);
+        color:white;
+    }
+    .comment-box
+    {
+        width: 96%;
+        height: 48px;
+        margin: 2%;
+        background-color: rgb(36,37,38);
+    }
+    .mat-icon{
+        margin-left: 90px;
+    }
+    
+    .caption-container
+    {
+        margin:2%;
+        color: white;
+        width: 96%;
+    }
+    img{
+    width: 100%;
+    height:auto;
+}
+</style>
+
+<div class="post">
+    <div>
+        <app-profile-picture [user_name]="userName" [logoPath]="logoPath"></app-profile-picture>    
+    
+    </div>
+    <div class="caption-container">{{caption}}</div>
+    <div class="image-space"><img src='assets/{{imagePath}}' /></div>
+
+    <div class="line">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">thumb_up</mat-icon><span>Like</span> 
+        <mat-icon aria-hidden="false" aria-label="Example home icon">comment</mat-icon><span>Comment</span> 
+        <mat-icon aria-hidden="false" aria-label="Example home icon">send</mat-icon><span>Share</span></div>
+   
+    <div class="comment-section"><h1>Comment Section</h1></div>
+    <div class="comment-box"><app-comment-box></app-comment-box></div>
+</div>

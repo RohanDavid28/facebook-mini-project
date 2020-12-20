@@ -1,0 +1,69 @@
+.login-container
+{
+    background-color: white;
+    width:30vw;
+    height:50vh;
+    position: relative;
+    top:20vh;
+    left:10vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.input-box
+{
+    position: relative;
+    left:2vw;
+    width:25vw;
+    height:6vh;
+    margin-top:2vh;
+    border-radius: 5px;
+    border-color:grey;
+    border-width: 2px;
+    font-size: 20px;
+}
+
+.login-button
+{
+    position: relative;
+    left:2vw;
+    width:25vw;
+    height:6vh;
+    margin-top:2vh;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #1876f2;  
+    color:white;  
+    border-width: 0px;
+}
+.forgot-pwd
+{
+    position: relative;
+    left:10vw;
+    margin-top:2vh;
+    font-size: 18px;
+    color: #1876f2;  
+    }
+
+.signup-button{
+ 
+    position: relative;
+    left:2vw;
+    width:25vw;
+    height:6vh;
+    margin-top:2vh;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #42b72a;  
+    color:white;     
+    border-width: 0px;
+}
+
+.error-message
+{
+    margin-left:2.5cm;
+    color:red;
+}

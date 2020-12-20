@@ -1,0 +1,24 @@
+.login-box{
+    background-color: #f0f2f5;
+    width: 48vw;
+    height:100vh;
+    float: left;
+}
+.fb-logo-box
+{
+    background-color:#f0f2f5;
+    width:48vw;
+    height:100vh;
+    float: left;
+    
+}
+.pos
+{
+    position: relative;
+    top: 180px;
+    left:15vw;
+}
+
+body{
+    background-color: #f0f2f5;
+}

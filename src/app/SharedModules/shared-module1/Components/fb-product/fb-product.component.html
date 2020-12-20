@@ -1,0 +1,46 @@
+
+<style>
+    .product
+    {
+        width:24%;
+        height:40%;
+        background-color: rgb(24,25,26);
+        margin-left: 1%;
+        margin-top: 20px;
+        border-radius: 8px;
+        float: left;
+        color:white;
+    
+    }
+    .product-image{
+        width: 100%;
+        border-radius: 8px;
+        height:80%;
+        float: left;
+    }
+    span{
+        position: absolute;
+    
+      bottom: 20px;
+      right: 22%;
+    
+    }
+  
+    ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    /* Optional: show position indicator in red */
+    ::-webkit-scrollbar-thumb {
+        background: #FF0000;
+    }
+    </style>
+
+    <div class="product">
+        <img src="assets/{{imagePath}}" class="product-image" >
+        <div>
+        {{price}}<br>
+        {{description}}
+        Chennai, TN
+        </div>
+    </div>

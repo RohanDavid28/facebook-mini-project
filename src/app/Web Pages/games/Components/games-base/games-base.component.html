@@ -1,0 +1,31 @@
+
+<style>
+
+    .game-title
+    {
+        margin-top: 65px;
+        width: 100%;
+        color: white;
+        font-size: 27px;
+    }
+    .game-container
+    {
+        margin-top: 20px;
+        width: 100%;
+        height:auto;
+        float: left;
+
+    }
+</style>
+
+    <span *ngFor="let gameList of gameList">
+        <div class="game-container">
+            <div class="game-title">{{gameList.gameCategory}}</div>
+            <span *ngFor="let gamename of gameList.games">
+                <app-games-container [gameName]="gamename.name" [imagePath]="gamename.imagePath" ></app-games-container>
+            </span>
+            
+        </div>
+        
+
+    </span>
